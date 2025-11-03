@@ -6,7 +6,7 @@
 
 Pandas 库有三个最核心的类，其中最重要的是`DataFrame`类型，它是学习的重点，如下图所示。
 
-<img src="res/pandas_data_structures.png" style="zoom:50%;">
+<img src="./res/pandas_data_structures.png" style="zoom:50%;">
 
 1. `Series`：表示一维数据，跟一维数组类似（带标签的数组），每个数据都有自己的索引（标签），可以通过索引访问数据。
 2. `DataFrame`：表示二维数据，类似于 Excel 电子表格，行和列都有自己的索引（标签），可以通过索引访问行、列、单元格。
@@ -16,7 +16,7 @@ Pandas 库有三个最核心的类，其中最重要的是`DataFrame`类型，�
 
 学习和使用 pandas 重点是`DataFrame`的应用，我们建议大家按照数据分析的流程来掌握对应的函数和方法，这样做往往会事半功倍。数据分析流程如下图所示，其中蓝色虚线圈中的部分就是可以通过 BI 工具（如：Power BI、Tableau等）或 Python 程序来完成的部分。
 
-<img src="res/data_analysis_steps.png" style="zoom:38%;">
+<img src="./res/data_analysis_steps.png" style="zoom:38%;">
 
 #### 数据获取
 
