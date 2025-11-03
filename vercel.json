@@ -1,5 +1,13 @@
 {
-  "framework": "other",
-  "buildCommand": "npm run docs:build",
-  "outputDirectory": ".vitepress/dist"
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "buildCommand": "npm run docs:build",
+        "distDir": ".vitepress/dist"
+      }
+    }
+  ]
 }
