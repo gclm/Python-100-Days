@@ -43,11 +43,11 @@ function scanGroup(dir: string): DefaultTheme.SidebarItem[] {
   const items: DefaultTheme.SidebarItem[] = []
   for (const f of files) {
     const full = join(base, f)
-    const content = readFileSync(full, 'utf-8')
+    // const content = readFileSync(full, 'utf-8')
     const raw = f.replace(/\.md$/i, '')
-    const title = firstHeadingTitle(content) || raw
+    // const title = firstHeadingTitle(content) || raw
     items.push({
-      text: buildItemText(f, title),
+      text: `${raw}`,
       link: `/${dir}/${raw}`,
     })
   }

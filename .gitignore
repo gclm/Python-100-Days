@@ -19,3 +19,4 @@ __pycache__
 /.vitepress/cache/
 /node_modules/
 /package-lock.json
+/issues/

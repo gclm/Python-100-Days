@@ -1,15 +1,24 @@
 import { defineConfig } from 'vitepress'
-import { sidebar } from './sidebar'
+import sidebar from './sidebar'
 
-const base = process.env.BASE || '/'
+const base = '/'
 
 export default defineConfig({
   srcDir: '.',
   base,
   cleanUrls: true,
   lastUpdated: true,
-  outline: 'deep',
+  markdown: {
+    lineNumbers: true,
+    theme: { light: 'github-light', dark: 'github-dark' },
+    languages: ['sql'],
+    languageAlias: {
+      mysql: 'sql',
+      hive: 'sql',
+    },
+  },
   themeConfig: {
+    outline: 'deep',
     nav: [
       { text: 'Day01-20', link: '/Day01-20/01.初识Python' },
       { text: 'Day21-30', link: '/Day21-30/21.文件读写和异常处理' },
@@ -25,4 +34,3 @@ export default defineConfig({
     sidebar
   }
 })
-
