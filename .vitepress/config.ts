@@ -4,6 +4,7 @@ import sidebar from './sidebar'
 const base = '/'
 
 export default defineConfig({
+  ignoreDeadLinks: true,
   srcDir: '.',
   base,
   cleanUrls: true,
