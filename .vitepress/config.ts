@@ -9,7 +9,7 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
   markdown: {
-    lineNumbers: true,
+    lineNumbers: false,
     theme: { light: 'github-light', dark: 'github-dark' },
     languages: ['sql'],
     languageAlias: {
